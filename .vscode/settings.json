@@ -1,0 +1,73 @@
+{
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.mouseWheelZoom": true,
+  "debug.terminal.clearBeforeReusing": true,
+  "workbench.startupEditor": "none",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.autoClosingDelete": "always",
+  "editor.autoClosingOvertype": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": true,
+  "editor.stickyScroll.enabled": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.accessibilitySupport": "off",
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "editor.suggest.preview": true,
+  "emmet.useInlineCompletions": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.quickSuggestionsDelay": 1,
+  "task.quickOpen.showAll": true,
+  "remoteHub.commitDirectlyWarning": "off",
+  "[css]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "files.associations": {
+    "*.js": "javascript"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "terminal.integrated.env.windows": {},
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.mouseWheelScrollSensitivity": 0.7,
+  "terminal.integrated.fontWeight": "600",
+  "editor.defaultFormatter": "vscode.html-language-features",
+  "workbench.colorTheme": "ayu MiDas",
+  "explorer.confirmDragAndDrop": false,
+  "editor.fontFamily": "'DejaVu Sans Mono for Powerline'",
+  "css.lint.unknownAtRules": "ignore",
+  "breadcrumbs.enabled": false,
+  "terminal.integrated.autoReplies": {},
+  "editor.formatOnSave": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "codeium.enableConfig": {
+    "*": true
+  },
+  "explorer.confirmDelete": false,
+  "codeium.aggressiveShutdown": true,
+  "terminal.integrated.mouseWheelZoom": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.fontSize": 17,
+  "workbench.editor.autoLockGroups": {
+    "workbench.editors.gettingStartedInput": true
+  }
+}
