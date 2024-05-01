@@ -2,7 +2,7 @@ import Feedback from "../Feedback/Feedback";
 
 function ReviewsContainer() {
   return (
-    <div className=" border-2 border-black">
+    <div className="">
       <section className="py-16 gap-8 flex flex-wrap justify-center content-start">
         <Feedback
           userReview=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima
