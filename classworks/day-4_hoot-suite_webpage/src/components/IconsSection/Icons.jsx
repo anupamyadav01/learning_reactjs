@@ -2,9 +2,11 @@ import PropTypes from "prop-types";
 
 function Icons({ imgSrc, para }) {
   return (
-    <div>
-      <img className="w-48 mb-10" src={imgSrc} alt="" />
-      <p>{para}</p>
+    <div className=" flex flex-col items-center text-center mb-10">
+      <div className="">
+        <img className=" mb-4 w-[200px]" src={imgSrc} alt="" />
+      </div>
+      <p className="w-[200px]">{para}</p>
     </div>
   );
 }

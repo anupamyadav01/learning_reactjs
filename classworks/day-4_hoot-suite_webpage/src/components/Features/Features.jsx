@@ -5,7 +5,7 @@ import Icons from "../IconsSection/Icons";
 
 function Features() {
   return (
-    <div className="flex justify-around mt-20">
+    <div className="flex justify-around mt-20 flex-wrap">
       <Icons
         imgSrc={rocket}
         para="Enterprise organizations successfully launched."

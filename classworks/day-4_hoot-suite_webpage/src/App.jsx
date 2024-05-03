@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <>
-      <div className="max-w-6xl mx-auto flex flex-col">
+      <div className="max-w-6xl mx-auto flex flex-col px-10">
         <Navbar />
         <HeroSection />
         <Features />
