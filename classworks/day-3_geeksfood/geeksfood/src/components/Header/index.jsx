@@ -1,6 +1,7 @@
 import "./styles.css";
 import styles from "./styles.module.css";
 import logoImage from "../images/logo.svg";
+// import Quotes from "../QuoteCard/QuoteCard";
 
 const Header = () => {
   // const navLinks = ["Home", "Quote", "Resturants", "Foods", "Contact"];
@@ -11,7 +12,7 @@ const Header = () => {
     },
     {
       name: "Quote",
-      link: "../Quote/index.jsx",
+      link: "../QuoteCard/QuoteCard",
     },
     {
       name: "Resturants",
@@ -29,6 +30,7 @@ const Header = () => {
 
   return (
     <div className="header">
+      <a href=""></a>
       <nav>
         <div className="logo">
           <img src={logoImage} alt="" />
