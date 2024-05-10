@@ -1,12 +1,11 @@
-// import ColorCard from "./components/ColorCard/ColorCard";
 import ColorPage from "./components/pages/ColorPicker/ColorPage";
 
-function App() {
+const App = () => {
   return (
-    <>
+    <div>
       <ColorPage />
-    </>
+    </div>
   );
-}
+};
 
 export default App;
