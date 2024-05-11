@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ShowMyTasks from "../ShowMyTasks/ShowMyTasks";
+import { v4 as generateRandomId } from "uuid";
 
 const AddPlanner = () => {
   const [myTasks, setMyTasks] = useState([]);
@@ -12,13 +13,15 @@ const AddPlanner = () => {
     const newTask = {
       subjectName,
       hours,
+      id: generateRandomId(),
     };
     setMyTasks([...myTasks, newTask]);
     setSubjectName("");
     setHours("");
   };
-  const deleteTask = () => {
-    console.log("delete");
+  const deleteTask = (id) => {
+    const filteredTasks = myTasks.filter((item) => id !== item.id);
+    setMyTasks(filteredTasks);
   };
   return (
     <div className=" text-center p-10 shadow-md">
@@ -48,10 +51,12 @@ const AddPlanner = () => {
       <ul className="mt-10">
         {myTasks.map((task) => (
           <ShowMyTasks
-            key={task.subjectName}
+            key={task.id}
+            id={task.id}
             subject={task.subjectName}
+            deleteTask={deleteTask}
+            setTaskFunc={setMyTasks}
             duration={task.hours}
-            delete={deleteTask}
           />
         ))}
       </ul>

@@ -1,49 +1,35 @@
 import "./styles.css";
 import styles from "./styles.module.css";
 import logoImage from "../images/logo.svg";
-// import Quotes from "../QuoteCard/QuoteCard";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  // const navLinks = ["Home", "Quote", "Resturants", "Foods", "Contact"];
-  const navLinks = [
-    {
-      name: "Home",
-      link: "#",
-    },
-    {
-      name: "Quote",
-      link: "../QuoteCard/QuoteCard",
-    },
-    {
-      name: "Resturants",
-      link: "https://www.geeksforgeeks.org/",
-    },
-    {
-      name: "Foods",
-      link: "https://www.geeksforgeeks.org/",
-    },
-    {
-      name: "Contact",
-      link: "https://www.geeksforgeeks.org/",
-    },
-  ];
-
   return (
     <div className="header">
       <a href=""></a>
       <nav>
         <div className="logo">
           <img src={logoImage} alt="" />
-          <a href="https://www.geeksforgeeks.org/">GeekFoods</a>
+          <a href="/">GeekFoods</a>
         </div>
 
         <div>
           <ul>
-            {navLinks.map((link, index) => (
-              <a key={index} href={link.link}>
-                {link.name}
-              </a>
-            ))}
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/quotes">Quote</NavLink>
+            </li>
+            <li>
+              <NavLink to="/restaurents">Resturants</NavLink>
+            </li>
+            <li>
+              <NavLink to="/foods">Foods</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
           </ul>
         </div>
 
