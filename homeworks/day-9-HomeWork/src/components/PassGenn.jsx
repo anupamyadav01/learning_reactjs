@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const PassGenn = () => {
   const [length, setLength] = useState(8);
