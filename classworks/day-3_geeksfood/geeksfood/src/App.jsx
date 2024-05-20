@@ -5,6 +5,7 @@ import RestaurentPage from "./pages/RestaurentPage/RestaurentPage";
 import QuotesPage from "./pages/QuotesPage/QuotesPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FoodDetails from "./components/FoodDetails/FoodDetails";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/foods" element={<Foods />} />
+          <Route path="/foodDetails:id" element={<FoodDetails />} />
           <Route path="/restaurents" element={<RestaurentPage />} />
           <Route path="/quotes" element={<QuotesPage />} />
           <Route path="/contact" element={<ContactPage />} />

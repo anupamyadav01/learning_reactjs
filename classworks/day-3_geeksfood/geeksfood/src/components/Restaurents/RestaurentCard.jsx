@@ -3,10 +3,9 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
 
 const RestaurentCard = ({ name, location, postcode, outcode }) => {
-  console.log(name, location);
   return (
-    <div className="shadow-lg p-4 mb-5 w-96">
-      <div>
+    <div className="shadow-lg p-4 mb-5 w-[370px] bg-[#fff] rounded-lg hover:shadow-2xl hover:scale-110 duration-300 cursor-pointer">
+      <div className="pb-8">
         <span className="flex gap-2 items-center mb-3">
           <h1 className="text-xl font-semibold mr-3">{name}</h1>
           <span className="flex gap-2 items-center">
